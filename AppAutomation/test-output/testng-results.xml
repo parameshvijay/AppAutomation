@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18872" started-at="2020-06-29T17:00:45 IST" finished-at="2020-06-29T17:01:04 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18872" started-at="2020-06-29T17:00:45 IST" finished-at="2020-06-29T17:01:04 IST">
+      <class name="appAutomation.CalculatorSample">
+        <test-method status="PASS" signature="setup()[pri:0, instance:appAutomation.CalculatorSample@78e67e0a]" name="setup" is-config="true" duration-ms="18839" started-at="2020-06-29T17:00:45 IST" finished-at="2020-06-29T17:01:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test()[pri:0, instance:appAutomation.CalculatorSample@78e67e0a]" name="test" duration-ms="4" started-at="2020-06-29T17:01:04 IST" finished-at="2020-06-29T17:01:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- appAutomation.CalculatorSample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
