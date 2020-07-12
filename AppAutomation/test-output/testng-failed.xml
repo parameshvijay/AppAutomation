@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="appAutomation.CalculatorSample">
+      <class name="com.tAjio.homePage.HamburgerMenu">
         <methods>
+          <include name="sHamburgerMenuInitialSetup"/>
+          <include name="homePage"/>
+          <include name="closure"/>
           <include name="setup"/>
-          <include name="sample"/>
         </methods>
-      </class> <!-- appAutomation.CalculatorSample -->
+      </class> <!-- com.tAjio.homePage.HamburgerMenu -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
