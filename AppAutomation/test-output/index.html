@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\ppadman1\AppData\Local\Temp\testng-eclipse-568572101\testng-customsuite.xml</span>
+                    <span>C:\Users\ppadman1\AppData\Local\Temp\testng-eclipse-250837845\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.tAjio.homePage.HamburgerMenu" hash-for-method="hamburgerMenuTap">hamburgerMenuTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.tAjio.homePage.HamburgerMenu" hash-for-method="homePage">homePage</a> <!-- method navigator-link -->
@@ -127,6 +132,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="hamburgerMenuTap">
+                  </a> <!-- hamburgerMenuTap -->
+                  <span class="method-name">hamburgerMenuTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="homePage">
                   </a> <!-- homePage -->
                   <span class="method-name">homePage</span>
@@ -137,7 +149,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ppadman1\AppData\Local\Temp\testng-eclipse-568572101\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ppadman1\AppData\Local\Temp\testng-eclipse-250837845\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,16 +198,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'homePage')
+data.setCell(0, 1, 'hamburgerMenuTap')
 data.setCell(0, 2, 'com.tAjio.homePage.HamburgerMenu')
-data.setCell(0, 3, 2631);
+data.setCell(0, 3, 4577);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'homePage')
+data.setCell(1, 2, 'com.tAjio.homePage.HamburgerMenu')
+data.setCell(1, 3, 2967);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -228,15 +244,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">sHamburgerMenuInitialSetup</span>
-                <span class="method-start">19780 ms</span>
+                <span class="method-start">19172 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">homePage</span>
-                <span class="method-start">19829 ms</span>
+                <span class="method-start">19205 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hamburgerMenuTap</span>
+                <span class="method-start">22182 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">closure</span>
-                <span class="method-start">22496 ms</span>
+                <span class="method-start">26794 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

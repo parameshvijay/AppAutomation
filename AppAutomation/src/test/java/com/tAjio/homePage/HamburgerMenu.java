@@ -28,5 +28,12 @@ public class HamburgerMenu extends CommonObjects {
 	@Test(priority = 1)
 	public void homePage() throws InterruptedException {
 		methodHomeObj.checkHomePageCorrectness();
+		assertHomeObj.checkHomePageText();
+	}
+
+	@Test(dependsOnMethods = "homePage")
+	public void hamburgerMenuTap() {
+		methodHomeObj.clickHamburger();
+		assertHomeObj.validateMenuContent();
 	}
 }
