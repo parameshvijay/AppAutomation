@@ -10,7 +10,7 @@ public class homePageObjects {
 
 	public String txtHamburgerMenuItems = "//android.widget.ListView/android.widget.RelativeLayout/android.widget.TextView";
 
-	List<String> sExpectedMenuItems = Arrays.asList("WOMN", "MEN", "KIDS", "INDIE (The Artisan Store)", "STORES",
+	List<String> sExpectedMenuItems = Arrays.asList("WOMEN", "MEN", "KIDS", "INDIE (The Artisan Store)", "STORES",
 			"NEW ARRIVALS", "SALE", "COLLECTIONS");
 
 	@FindBy(id = "com.ril.ajio:id/category_detailview_imv_one")
