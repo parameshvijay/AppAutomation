@@ -9,6 +9,7 @@
           <include name="homePage"/>
           <include name="closure"/>
           <include name="setup"/>
+          <include name="hamburgerMenuTap"/>
         </methods>
       </class> <!-- com.tAjio.homePage.HamburgerMenu -->
     </classes>

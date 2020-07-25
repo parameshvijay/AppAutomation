@@ -17,7 +17,10 @@ public class homePageMethods extends CommonObjects {
 		wait.until(ExpectedConditions.visibilityOf(homePageObj.lnkAjioManiaHeader));
 		homePageObj.lnkAjioManiaHeader.click();
 		wait.until(ExpectedConditions.visibilityOf(homePageObj.lnkAjioMania));
-		String sSampleText = homePageObj.lnkAjioMania.getText();
-		System.out.println(sSampleText);
+	}
+
+	public void clickHamburger() {
+		wait.until(ExpectedConditions.visibilityOf(homePageObj.lnkAjioMania));
+		homePageObj.lnkHamburgerMenu.click();
 	}
 }
