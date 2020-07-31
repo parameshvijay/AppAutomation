@@ -1,5 +1,6 @@
 package com.sAjio.HomePage;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -13,14 +14,14 @@ public class homePageMethods extends CommonObjects {
 		homePageObj = PageFactory.initElements(CommonObjects.driver, homePageObjects.class);
 	}
 
-	public void checkHomePageCorrectness() {
+	public void hamburgerMenuLink() {
 		wait.until(ExpectedConditions.visibilityOf(homePageObj.lnkAjioManiaHeader));
 		homePageObj.lnkAjioManiaHeader.click();
 		wait.until(ExpectedConditions.visibilityOf(homePageObj.lnkAjioMania));
 	}
 
-	public void clickHamburger() {
-		wait.until(ExpectedConditions.visibilityOf(homePageObj.lnkAjioMania));
-		homePageObj.lnkHamburgerMenu.click();
+	public void clickAction(WebElement e) {
+		wait.until(ExpectedConditions.visibilityOf(e));
+		e.click();
 	}
 }

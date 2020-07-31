@@ -30,12 +30,9 @@ public class homePageAsserts extends CommonObjects {
 			return false;
 	}
 
-	public boolean checkHomePageText() {
+	public void assertHomePageText() {
 		wait.until(ExpectedConditions.elementToBeClickable(homePageObj.lnkAjioMania));
-		if (homePageObj.lnkAjioMania.getText().equalsIgnoreCase("Ajio"))
-			return true;
-		else
-			return false;
+		Assert.assertEquals(homePageObj.lnkAjioMania.getText(), "AJIO");
 	}
 
 	public void validateMenuContent() {

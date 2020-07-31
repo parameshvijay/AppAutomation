@@ -1,5 +1,6 @@
 package com.tAjio.homePage;
 
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -23,17 +24,30 @@ public class HamburgerMenu extends CommonObjects {
 		methodHomeObj = new homePageMethods();
 		assertHomeObj = new homePageAsserts();
 		homeObj = new homePageObjects();
+		homeObj = PageFactory.initElements(CommonObjects.driver, homePageObjects.class);
 	}
 
 	@Test(priority = 1)
 	public void homePage() throws InterruptedException {
-		methodHomeObj.checkHomePageCorrectness();
-		assertHomeObj.checkHomePageText();
+		methodHomeObj.hamburgerMenuLink();
+		assertHomeObj.assertHomePageText();
 	}
 
 	@Test(dependsOnMethods = "homePage")
 	public void hamburgerMenuTap() {
-		methodHomeObj.clickHamburger();
+		methodHomeObj.clickAction(homeObj.lnkHamburgerMenu);
 		assertHomeObj.validateMenuContent();
+	}
+
+	@Test(dependsOnMethods = "hamburgerMenuTap")
+	public void secondaryMenuTap() {
+		methodHomeObj.clickAction(homeObj.lnkHamburgerPrimaryMenu);
+		methodHomeObj.clickAction(homeObj.lnkHamburgerSecondaryMenu);
+		methodHomeObj.clickAction(homeObj.lnkHamburgerFinalOption);
+	}
+
+	@Test(dependsOnMethods = "secondaryMenuTap")
+	public void productCatalogPage() throws InterruptedException {
+		Thread.sleep(5000);
 	}
 }
