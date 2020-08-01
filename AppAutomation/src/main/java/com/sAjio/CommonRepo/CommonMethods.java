@@ -21,21 +21,20 @@ public class CommonMethods extends CommonObjects {
 	}
 
 	@SuppressWarnings("rawtypes")
-	public void scrollDown(WebElement element) throws InterruptedException {
-		do {
+	public void scrollDown(WebElement element, double sPercentage, double ePercentage) {
+		for (int i = 0; i >= 0; i++)
 			try {
-				element.click();
+				if (element.isDisplayed())
+					break;
 			} catch (Exception e) {
-				double anchorPercentage = 0.5, startPercentage = 0.8, endPercentage = 0.05;
+				double anchorPercentage = 0.5;
 				Dimension size = driver.manage().window().getSize();
 				int anchor = (int) (size.width * anchorPercentage);
-				int startPoint = (int) (size.height * startPercentage);
-				int endPoint = (int) (size.height * endPercentage);
+				int startPoint = (int) (size.height * sPercentage);
+				int endPoint = (int) (size.height * ePercentage);
 
 				new TouchAction(driver).press(point(anchor, startPoint)).waitAction(waitOptions(ofMillis(1000)))
 						.moveTo(point(anchor, endPoint)).release().perform();
-				Thread.sleep(10000);
 			}
-		} while (element.isDisplayed());
 	}
 }

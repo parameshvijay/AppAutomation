@@ -11,6 +11,11 @@ public class searchResultsPageObjects {
 	@FindBy(id = "com.ril.ajio:id/parent_layout")
 	public WebElement searchResultsOverallContent;
 
-	@FindBy(xpath = "(//*[@resource-id='com.ril.ajio:id/item_price'])[2]")
+	@FindBy(xpath = "(//*[@resource-id='com.ril.ajio:id/item_price'])[3]")
 	public WebElement lnkSearchResultsThirdItem;
+
+	String slnkSearchResultsProductsActualPrice = "(//*[@resource-id='com.ril.ajio:id/item_price'])";
+	String slnkSearchResultsProductsName = "(//*[@resource-id='com.ril.ajio:id/item_name'])";
+	String slnkSearchResultsProductsOriginalPrice = "(//*[@resource-id='com.ril.ajio:id/item_old_price'])";
+	String slnkSearchResultsProductBrandName = "(//*[@resource-id='com.ril.ajio:id/item_brand'])";
 }

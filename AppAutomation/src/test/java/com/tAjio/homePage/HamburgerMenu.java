@@ -66,7 +66,8 @@ public class HamburgerMenu extends CommonObjects {
 	@Test(dependsOnMethods = "secondaryMenuTap")
 	public void productResultsPage() throws InterruptedException {
 		methodSearchResultsObj.searchDetailsFirstLevel();
-		methodCommon.scrollDown(searchResultsObj.lnkSearchResultsThirdItem);
+		double startPercentage = 0.15, endPercentage = 0.05;
+		methodCommon.scrollDown(searchResultsObj.lnkSearchResultsThirdItem, startPercentage, endPercentage);
 		methodSearchResultsObj.fetchProductDetails();
 	}
 }
