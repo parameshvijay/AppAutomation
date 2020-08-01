@@ -1,4 +1,4 @@
-package commonRepo;
+package com.sAjio.CommonRepo;
 
 import java.net.MalformedURLException;
 import java.net.URL;

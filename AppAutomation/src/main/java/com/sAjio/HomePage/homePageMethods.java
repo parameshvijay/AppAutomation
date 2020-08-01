@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import commonRepo.CommonObjects;
+import com.sAjio.CommonRepo.CommonObjects;
 
 public class homePageMethods extends CommonObjects {
 

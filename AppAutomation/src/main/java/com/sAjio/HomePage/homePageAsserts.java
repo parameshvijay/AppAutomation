@@ -9,7 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-import commonRepo.CommonObjects;
+import com.sAjio.CommonRepo.CommonObjects;
+
 import io.appium.java_client.MobileElement;
 
 public class homePageAsserts extends CommonObjects {

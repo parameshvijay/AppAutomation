@@ -5,11 +5,12 @@
     <classes>
       <class name="com.tAjio.homePage.HamburgerMenu">
         <methods>
+          <include name="closure"/>
           <include name="sHamburgerMenuInitialSetup"/>
+          <include name="productResultsPage"/>
+          <include name="setup"/>
           <include name="secondaryMenuTap"/>
           <include name="homePage"/>
-          <include name="closure"/>
-          <include name="setup"/>
           <include name="hamburgerMenuTap"/>
         </methods>
       </class> <!-- com.tAjio.homePage.HamburgerMenu -->
