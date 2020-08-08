@@ -9,12 +9,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.sAjio.CommonRepo.CommonObjects;
+import com.sAjio.productDetailsPage.productDetailsPageAsserts;
+import com.sAjio.productDetailsPage.productDetailsPageMethods;
 
 import io.appium.java_client.MobileElement;
 
 public class searchResultsPageMethods extends CommonObjects {
 
 	searchResultsPageObjects searchResultsObj;
+	productDetailsPageAsserts assertProductDetailsPageObj;
+
+	public static HashMap<Integer, List<String>> productDetails = new HashMap<Integer, List<String>>();
 
 	public searchResultsPageMethods() {
 		searchResultsObj = PageFactory.initElements(CommonObjects.driver, searchResultsPageObjects.class);
@@ -31,23 +36,27 @@ public class searchResultsPageMethods extends CommonObjects {
 				.findElements(By.xpath(searchResultsObj.slnkSearchResultsProductsActualPrice));
 		int productCount = productInfo.size();
 
-		List<String> ProductDetails = new ArrayList<>();
+		List<String> productDetailsSearchPage = new ArrayList<>();
 
 		for (int i = 1; i <= productCount; i++) {
-			HashMap<Integer, List<String>> hmap = new HashMap<Integer, List<String>>();
-			ProductDetails.add(
+			wait.until(ExpectedConditions.elementToBeClickable(searchResultsObj.searchResultsOverallContent));
+			productDetailsSearchPage.add(
 					driver.findElement(By.xpath(searchResultsObj.slnkSearchResultsProductBrandName + "[" + i + "]"))
 							.getText());
-			ProductDetails.add(driver
+			productDetailsSearchPage.add(driver
 					.findElement(By.xpath(searchResultsObj.slnkSearchResultsProductsName + "[" + i + "]")).getText());
-			ProductDetails.add(
+			productDetailsSearchPage.add(
 					driver.findElement(By.xpath(searchResultsObj.slnkSearchResultsProductsActualPrice + "[" + i + "]"))
 							.getText());
-			ProductDetails.add(driver
+			productDetailsSearchPage.add(driver
 					.findElement(By.xpath(searchResultsObj.slnkSearchResultsProductsOriginalPrice + "[" + i + "]"))
 					.getText());
-			hmap.put(i, ProductDetails);
-			System.out.println(hmap);
+			productDetails.put(i, productDetailsSearchPage);
+
+			driver.findElement(By.xpath(searchResultsObj.slnkSearchResultsProductBrandName + "[" + i + "]")).click();
+			List<String> pdpDetails = productDetailsPageMethods.getProductDetails();
+
+			assertProductDetailsPageObj.validateCorrectness(pdpDetails, productDetailsSearchPage);
 		}
 	}
 }
