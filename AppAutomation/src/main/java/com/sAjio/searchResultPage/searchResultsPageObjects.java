@@ -14,8 +14,8 @@ public class searchResultsPageObjects {
 	@FindBy(xpath = "(//*[@resource-id='com.ril.ajio:id/item_price'])[3]")
 	public WebElement lnkSearchResultsThirdItem;
 
-	String slnkSearchResultsProductsActualPrice = "(//*[@resource-id='com.ril.ajio:id/item_price'])";
-	String slnkSearchResultsProductsName = "(//*[@resource-id='com.ril.ajio:id/item_name'])";
-	String slnkSearchResultsProductsOriginalPrice = "(//*[@resource-id='com.ril.ajio:id/item_old_price'])";
-	String slnkSearchResultsProductBrandName = "(//*[@resource-id='com.ril.ajio:id/item_brand'])";
+	public String slnkSearchResultsProductsActualPrice = "(//*[@resource-id='com.ril.ajio:id/item_price'])";
+	public String slnkSearchResultsProductsName = "(//*[@resource-id='com.ril.ajio:id/item_name'])";
+	public String slnkSearchResultsProductsOriginalPrice = "(//*[@resource-id='com.ril.ajio:id/item_old_price'])";
+	public String slnkSearchResultsProductBrandName = "(//*[@resource-id='com.ril.ajio:id/item_brand'])";
 }

@@ -22,4 +22,10 @@ public class productDetailsPageObjects {
 
 	@FindBy(id = "com.ril.ajio:id/row_pdp_title_price_tv_old_price")
 	public WebElement txtPDPProductOriginalPrice;
+
+	@FindBy(id = "com.ril.ajio:id/row_pdp_tv_size")
+	public WebElement icnSizeChart;
+
+	@FindBy(id = "com.ril.ajio:id/toolbar_title")
+	public WebElement txtSizeGuide;
 }

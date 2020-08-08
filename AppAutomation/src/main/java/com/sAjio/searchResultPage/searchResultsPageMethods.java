@@ -23,6 +23,7 @@ public class searchResultsPageMethods extends CommonObjects {
 
 	public searchResultsPageMethods() {
 		searchResultsObj = PageFactory.initElements(CommonObjects.driver, searchResultsPageObjects.class);
+		assertProductDetailsPageObj = new productDetailsPageAsserts();
 	}
 
 	public void searchDetailsFirstLevel() {
@@ -57,6 +58,8 @@ public class searchResultsPageMethods extends CommonObjects {
 			List<String> pdpDetails = productDetailsPageMethods.getProductDetails();
 
 			assertProductDetailsPageObj.validateCorrectness(pdpDetails, productDetailsSearchPage);
+			pdpDetails.clear();
+			productDetailsSearchPage.clear();
 		}
 	}
 }
