@@ -80,9 +80,8 @@ public class HamburgerMenu extends CommonObjects {
 		methodSearchResultsObj.fetchProductDetails();
 	}
 
-//	@Test(dependsOnMethods = "productResultsPage")
-//	public void checkProductCorrectness() {
-//		methodSearchResultsObj.checkProductDetailsInPDPage();
-//		methodProductDetailsPageObj.fetchProductDetails();
-//	}
+	@Test(dependsOnMethods = "productResultsPage")
+	public void productDetailsPage() {
+		methodProductDetailsPageObj.checkPDPCorrectness();
+	}
 }
