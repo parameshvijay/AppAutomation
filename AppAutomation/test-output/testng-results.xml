@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="73292" started-at="2020-08-08T15:59:29 IST" finished-at="2020-08-08T16:00:42 IST">
+  <suite name="Default suite" duration-ms="79135" started-at="2020-08-08T18:38:02 IST" finished-at="2020-08-08T18:39:21 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="73292" started-at="2020-08-08T15:59:29 IST" finished-at="2020-08-08T16:00:42 IST">
+    <test name="Default test" duration-ms="79135" started-at="2020-08-08T18:38:02 IST" finished-at="2020-08-08T18:39:21 IST">
       <class name="com.tAjio.homePage.HamburgerMenu">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="setup" is-config="true" duration-ms="18045" started-at="2020-08-08T15:59:29 IST" finished-at="2020-08-08T15:59:47 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="setup" is-config="true" duration-ms="15569" started-at="2020-08-08T18:38:02 IST" finished-at="2020-08-08T18:38:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="sHamburgerMenuInitialSetup()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="sHamburgerMenuInitialSetup" is-config="true" duration-ms="27" started-at="2020-08-08T15:59:47 IST" finished-at="2020-08-08T15:59:47 IST">
+        <test-method status="PASS" signature="sHamburgerMenuInitialSetup()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="sHamburgerMenuInitialSetup" is-config="true" duration-ms="60" started-at="2020-08-08T18:38:17 IST" finished-at="2020-08-08T18:38:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sHamburgerMenuInitialSetup -->
-        <test-method status="PASS" signature="homePage()[pri:1, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="homePage" duration-ms="3046" started-at="2020-08-08T15:59:47 IST" finished-at="2020-08-08T15:59:50 IST">
+        <test-method status="PASS" signature="homePage()[pri:1, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="homePage" duration-ms="3126" started-at="2020-08-08T18:38:18 IST" finished-at="2020-08-08T18:38:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="hamburgerMenuTap()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="hamburgerMenuTap" duration-ms="6843" started-at="2020-08-08T15:59:50 IST" depends-on-methods="com.tAjio.homePage.HamburgerMenu.homePage" finished-at="2020-08-08T15:59:57 IST">
+        <test-method status="PASS" signature="hamburgerMenuTap()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="hamburgerMenuTap" duration-ms="7682" started-at="2020-08-08T18:38:21 IST" depends-on-methods="com.tAjio.homePage.HamburgerMenu.homePage" finished-at="2020-08-08T18:38:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hamburgerMenuTap -->
-        <test-method status="PASS" signature="secondaryMenuTap()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="secondaryMenuTap" duration-ms="10070" started-at="2020-08-08T15:59:57 IST" depends-on-methods="com.tAjio.homePage.HamburgerMenu.hamburgerMenuTap" finished-at="2020-08-08T16:00:07 IST">
+        <test-method status="PASS" signature="secondaryMenuTap()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="secondaryMenuTap" duration-ms="9171" started-at="2020-08-08T18:38:28 IST" depends-on-methods="com.tAjio.homePage.HamburgerMenu.hamburgerMenuTap" finished-at="2020-08-08T18:38:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- secondaryMenuTap -->
-        <test-method status="PASS" signature="productResultsPage()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="productResultsPage" duration-ms="35225" started-at="2020-08-08T16:00:07 IST" depends-on-methods="com.tAjio.homePage.HamburgerMenu.secondaryMenuTap" finished-at="2020-08-08T16:00:42 IST">
+        <test-method status="PASS" signature="productResultsPage()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="productResultsPage" duration-ms="37068" started-at="2020-08-08T18:38:38 IST" depends-on-methods="com.tAjio.homePage.HamburgerMenu.secondaryMenuTap" finished-at="2020-08-08T18:39:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productResultsPage -->
-        <test-method status="PASS" signature="closure()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="closure" is-config="true" duration-ms="1436" started-at="2020-08-08T16:00:42 IST" finished-at="2020-08-08T16:00:44 IST">
+        <test-method status="PASS" signature="productDetailsPage()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="productDetailsPage" duration-ms="6399" started-at="2020-08-08T18:39:15 IST" depends-on-methods="com.tAjio.homePage.HamburgerMenu.productResultsPage" finished-at="2020-08-08T18:39:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productDetailsPage -->
+        <test-method status="PASS" signature="closure()[pri:0, instance:com.tAjio.homePage.HamburgerMenu@480bdb19]" name="closure" is-config="true" duration-ms="1480" started-at="2020-08-08T18:39:21 IST" finished-at="2020-08-08T18:39:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->

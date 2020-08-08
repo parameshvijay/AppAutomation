@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.sAjio.CommonRepo.CommonMethods;
 import com.sAjio.CommonRepo.CommonObjects;
 import com.sAjio.searchResultPage.searchResultsPageMethods;
 import com.sAjio.searchResultPage.searchResultsPageObjects;
@@ -15,10 +16,12 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 
 	public static productDetailsPageObjects productDetailsObj;
 	searchResultsPageObjects searchResultsObj;
+	CommonMethods comMethods = new CommonMethods();
 
 	public productDetailsPageMethods() {
 		productDetailsObj = PageFactory.initElements(CommonObjects.driver, productDetailsPageObjects.class);
 		searchResultsObj = PageFactory.initElements(CommonObjects.driver, searchResultsPageObjects.class);
+		comMethods = new CommonMethods();
 	}
 
 	public static List<String> getProductDetails() {
@@ -38,8 +41,7 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 		wait.until(ExpectedConditions.elementToBeClickable(searchResultsObj.searchResultsOverallContent));
 		driver.findElement(By.xpath(searchResultsObj.slnkSearchResultsProductBrandName + "[1]")).click();
 
-		wait.until(ExpectedConditions.elementToBeClickable(productDetailsObj.icnSizeChart));
-		productDetailsObj.icnSizeChart.click();
-		wait.until(ExpectedConditions.elementToBeClickable(productDetailsObj.txtSizeGuide));
+		comMethods.clickAction(productDetailsObj.icnSizeChart);
+		comMethods.clickAction(productDetailsObj.icnSizeChart);
 	}
 }

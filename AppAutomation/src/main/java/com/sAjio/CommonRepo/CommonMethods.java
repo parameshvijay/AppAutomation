@@ -7,6 +7,7 @@ import static java.time.Duration.ofMillis;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.sAjio.searchResultPage.searchResultsPageObjects;
 
@@ -36,5 +37,10 @@ public class CommonMethods extends CommonObjects {
 				new TouchAction(driver).press(point(anchor, startPoint)).waitAction(waitOptions(ofMillis(1000)))
 						.moveTo(point(anchor, endPoint)).release().perform();
 			}
+	}
+
+	public void clickAction(WebElement e) {
+		wait.until(ExpectedConditions.visibilityOf(e));
+		e.click();
 	}
 }
