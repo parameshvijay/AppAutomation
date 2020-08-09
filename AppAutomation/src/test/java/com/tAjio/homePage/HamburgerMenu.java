@@ -82,6 +82,9 @@ public class HamburgerMenu extends CommonObjects {
 
 	@Test(dependsOnMethods = "productResultsPage")
 	public void productDetailsPage() {
-		methodProductDetailsPageObj.checkPDPCorrectness();
+		methodProductDetailsPageObj.checkSizeChart();
+		double startPercentage = 0.15, endPercentage = 0.05;
+		methodCommon.scrollDown(productDetailsObj.lnkCheckSizeChart, startPercentage, endPercentage);
+		methodProductDetailsPageObj.validatePDPContents();
 	}
 }

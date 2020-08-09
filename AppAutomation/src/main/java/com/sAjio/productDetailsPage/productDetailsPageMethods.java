@@ -39,13 +39,14 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 		return pdpDetails;
 	}
 
-	public void checkPDPCorrectness() {
+	public void checkSizeChart() {
 		wait.until(ExpectedConditions.elementToBeClickable(searchResultsObj.searchResultsOverallContent));
 
 		String sBrandName = driver.findElement(By.xpath(searchResultsObj.slnkSearchResultsProductBrandName + "[1]"))
 				.getText();
 		driver.findElement(By.xpath(searchResultsObj.slnkSearchResultsProductBrandName + "[1]")).click();
 
+		// Size Chart Validation
 		comMethods.clickAction(productDetailsObj.icnSizeChart);
 		wait.until(ExpectedConditions.visibilityOf(productDetailsObj.txtSizeGuide));
 
@@ -53,5 +54,15 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 		sBrandNameInSizeChart = sBrandNameInSizeChart.substring(8);
 
 		assertProductDetailsPageObj.validateBrandInSizeChart(sBrandName, sBrandNameInSizeChart);
+		productDetailsObj.icnNavigateBackSizeChart.click();
+		wait.until(ExpectedConditions.visibilityOf(productDetailsObj.imgProductDetailsPage));
+	}
+
+	public void validatePDPContents() {
+		wait.until(ExpectedConditions.visibilityOf(productDetailsObj.lnkCheckSizeChart));
+		productDetailsObj.lnkSizeNumber34.click();
+		wait.until(ExpectedConditions.visibilityOf(productDetailsObj.txtSizeNumberHeader));
+		String sSelectedSize = productDetailsObj.txtSizeNumber.getText().substring(2, 3);
+		System.out.println(sSelectedSize);
 	}
 }
