@@ -28,4 +28,7 @@ public class productDetailsPageObjects {
 
 	@FindBy(id = "com.ril.ajio:id/toolbar_title")
 	public WebElement txtSizeGuide;
+
+	@FindBy(xpath = "//android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[1]")
+	public WebElement txtBrandName;
 }

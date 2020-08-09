@@ -16,11 +16,13 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 
 	public static productDetailsPageObjects productDetailsObj;
 	searchResultsPageObjects searchResultsObj;
+	productDetailsPageAsserts assertProductDetailsPageObj;
 	CommonMethods comMethods = new CommonMethods();
 
 	public productDetailsPageMethods() {
 		productDetailsObj = PageFactory.initElements(CommonObjects.driver, productDetailsPageObjects.class);
 		searchResultsObj = PageFactory.initElements(CommonObjects.driver, searchResultsPageObjects.class);
+		assertProductDetailsPageObj = new productDetailsPageAsserts();
 		comMethods = new CommonMethods();
 	}
 
@@ -39,9 +41,17 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 
 	public void checkPDPCorrectness() {
 		wait.until(ExpectedConditions.elementToBeClickable(searchResultsObj.searchResultsOverallContent));
+
+		String sBrandName = driver.findElement(By.xpath(searchResultsObj.slnkSearchResultsProductBrandName + "[1]"))
+				.getText();
 		driver.findElement(By.xpath(searchResultsObj.slnkSearchResultsProductBrandName + "[1]")).click();
 
 		comMethods.clickAction(productDetailsObj.icnSizeChart);
-		comMethods.clickAction(productDetailsObj.icnSizeChart);
+		wait.until(ExpectedConditions.visibilityOf(productDetailsObj.txtSizeGuide));
+
+		String sBrandNameInSizeChart = productDetailsObj.txtBrandName.getText();
+		sBrandNameInSizeChart = sBrandNameInSizeChart.substring(8);
+
+		assertProductDetailsPageObj.validateBrandInSizeChart(sBrandName, sBrandNameInSizeChart);
 	}
 }

@@ -5,6 +5,7 @@
     <classes>
       <class name="com.tAjio.homePage.HamburgerMenu">
         <methods>
+          <include name="productDetailsPage"/>
           <include name="closure"/>
           <include name="sHamburgerMenuInitialSetup"/>
           <include name="productResultsPage"/>
