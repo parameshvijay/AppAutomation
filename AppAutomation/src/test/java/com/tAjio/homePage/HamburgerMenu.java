@@ -76,7 +76,7 @@ public class HamburgerMenu extends CommonObjects {
 	public void productResultsPage() throws InterruptedException {
 		methodSearchResultsObj.searchDetailsFirstLevel();
 		double startPercentage = 0.15, endPercentage = 0.05;
-		methodCommon.scrollDown(searchResultsObj.lnkSearchResultsThirdItem, startPercentage, endPercentage);
+		methodCommon.scrollDown(searchResultsObj.lnkProductImageFourthItem, startPercentage, endPercentage);
 		methodSearchResultsObj.fetchProductDetails();
 	}
 

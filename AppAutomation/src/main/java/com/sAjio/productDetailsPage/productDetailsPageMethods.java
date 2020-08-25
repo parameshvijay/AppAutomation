@@ -62,7 +62,7 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 		wait.until(ExpectedConditions.visibilityOf(productDetailsObj.lnkCheckSizeChart));
 		productDetailsObj.lnkSizeNumber34.click();
 		wait.until(ExpectedConditions.visibilityOf(productDetailsObj.txtSizeNumberHeader));
-		String sSelectedSize = productDetailsObj.txtSizeNumber.getText().substring(2, 3);
+		String sSelectedSize = productDetailsObj.txtSizeNumber.getText().substring(1, 3);
 		System.out.println(sSelectedSize);
 	}
 }
