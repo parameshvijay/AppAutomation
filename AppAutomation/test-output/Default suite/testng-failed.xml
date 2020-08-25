@@ -3,18 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tAjio.homePage.HamburgerMenu">
+      <class name="com.tAjio.homePage.Notifications">
         <methods>
-          <include name="productDetailsPage"/>
           <include name="closure"/>
-          <include name="sHamburgerMenuInitialSetup"/>
-          <include name="productResultsPage"/>
+          <include name="notificationSection"/>
           <include name="setup"/>
-          <include name="secondaryMenuTap"/>
+          <include name="sHamburgerMenuInitialSetup"/>
           <include name="homePage"/>
-          <include name="hamburgerMenuTap"/>
         </methods>
-      </class> <!-- com.tAjio.homePage.HamburgerMenu -->
+      </class> <!-- com.tAjio.homePage.Notifications -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

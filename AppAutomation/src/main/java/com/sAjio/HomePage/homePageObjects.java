@@ -33,4 +33,16 @@ public class homePageObjects {
 
 	@FindBy(xpath = "//*[@resource-id='com.ril.ajio:id/expandedListItem' and @text='TROUSERS & PANTS']")
 	public WebElement lnkHamburgerFinalOption;
+
+	@FindBy(id = "com.ril.ajio:id/noti_icon")
+	public WebElement lnkNotificationIcon;
+
+	@FindBy(id = "com.ril.ajio:id/toolbar_title")
+	public WebElement txtNotificationHeader;
+
+	@FindBy(id = "com.ril.ajio:id/empty_notification_img")
+	public WebElement imgEmptyNotification;
+
+	@FindBy(xpath = "//*[@content-desc='Navigate up']")
+	public WebElement icnNotificationBack;
 }

@@ -14,7 +14,7 @@ public class homePageMethods extends CommonObjects {
 		homePageObj = PageFactory.initElements(CommonObjects.driver, homePageObjects.class);
 	}
 
-	public void hamburgerMenuLink() {
+	public void homePageNavigation() {
 		wait.until(ExpectedConditions.visibilityOf(homePageObj.lnkAjioManiaHeader));
 		homePageObj.lnkAjioManiaHeader.click();
 		wait.until(ExpectedConditions.visibilityOf(homePageObj.lnkAjioMania));

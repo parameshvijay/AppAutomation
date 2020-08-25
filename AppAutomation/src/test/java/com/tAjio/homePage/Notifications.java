@@ -16,7 +16,7 @@ import com.sAjio.searchResultPage.searchResultsPageAsserts;
 import com.sAjio.searchResultPage.searchResultsPageMethods;
 import com.sAjio.searchResultPage.searchResultsPageObjects;
 
-public class HamburgerMenu extends CommonObjects {
+public class Notifications extends CommonObjects {
 
 	// Object declaration for Methods
 	homePageMethods methodHomeObj;
@@ -60,31 +60,8 @@ public class HamburgerMenu extends CommonObjects {
 	}
 
 	@Test(dependsOnMethods = "homePage")
-	public void hamburgerMenuTap() {
-		methodHomeObj.clickAction(homeObj.lnkHamburgerMenu);
-		assertHomeObj.validateMenuContent();
-	}
-
-	@Test(dependsOnMethods = "hamburgerMenuTap")
-	public void secondaryMenuTap() {
-		methodHomeObj.clickAction(homeObj.lnkHamburgerPrimaryMenu);
-		methodHomeObj.clickAction(homeObj.lnkHamburgerSecondaryMenu);
-		methodHomeObj.clickAction(homeObj.lnkHamburgerFinalOption);
-	}
-
-	@Test(dependsOnMethods = "secondaryMenuTap")
-	public void productResultsPage() throws InterruptedException {
-		methodSearchResultsObj.searchDetailsFirstLevel();
-		double startPercentage = 0.15, endPercentage = 0.05;
-		methodCommon.scrollDown(searchResultsObj.lnkProductImageFourthItem, startPercentage, endPercentage);
-		methodSearchResultsObj.fetchProductDetails();
-	}
-
-	@Test(dependsOnMethods = "productResultsPage")
-	public void productDetailsPage() {
-		methodProductDetailsPageObj.checkSizeChart();
-		double startPercentage = 0.15, endPercentage = 0.05;
-		methodCommon.scrollDown(productDetailsObj.lnkCheckSizeChart, startPercentage, endPercentage);
-		methodProductDetailsPageObj.validatePDPContents();
+	public void notificationSection() {
+		methodHomeObj.clickAction(homeObj.lnkNotificationIcon);
+		assertHomeObj.validateNotificationScreen();
 	}
 }
