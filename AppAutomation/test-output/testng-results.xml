@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47300" started-at="2020-08-26T16:16:07 IST" finished-at="2020-08-26T16:16:54 IST">
+  <suite name="Default suite" duration-ms="54902" started-at="2020-08-27T01:33:27 IST" finished-at="2020-08-27T01:34:22 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47300" started-at="2020-08-26T16:16:07 IST" finished-at="2020-08-26T16:16:54 IST">
-      <class name="com.tAjio.homePage.StaticSections">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.tAjio.homePage.StaticSections@2a556333]" name="setup" is-config="true" duration-ms="16975" started-at="2020-08-26T16:16:07 IST" finished-at="2020-08-26T16:16:24 IST">
+    <test name="Default test" duration-ms="54902" started-at="2020-08-27T01:33:27 IST" finished-at="2020-08-27T01:34:22 IST">
+      <class name="com.tAjio.homePage.PDPBasic">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.tAjio.homePage.PDPBasic@480bdb19]" name="setup" is-config="true" duration-ms="18146" started-at="2020-08-27T01:33:27 IST" finished-at="2020-08-27T01:33:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="sStaticSectionsInitialSetup()[pri:0, instance:com.tAjio.homePage.StaticSections@2a556333]" name="sStaticSectionsInitialSetup" is-config="true" duration-ms="79" started-at="2020-08-26T16:16:24 IST" finished-at="2020-08-26T16:16:24 IST">
+        <test-method status="PASS" signature="sStaticSectionsInitialSetup()[pri:0, instance:com.tAjio.homePage.PDPBasic@480bdb19]" name="sStaticSectionsInitialSetup" is-config="true" duration-ms="66" started-at="2020-08-27T01:33:45 IST" finished-at="2020-08-27T01:33:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sStaticSectionsInitialSetup -->
-        <test-method status="PASS" signature="homePage()[pri:1, instance:com.tAjio.homePage.StaticSections@2a556333]" name="homePage" duration-ms="3099" started-at="2020-08-26T16:16:24 IST" finished-at="2020-08-26T16:16:27 IST">
+        <test-method status="PASS" signature="homePage()[pri:1, instance:com.tAjio.homePage.PDPBasic@480bdb19]" name="homePage" duration-ms="19067" started-at="2020-08-27T01:33:45 IST" finished-at="2020-08-27T01:34:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="notificationSection()[pri:0, instance:com.tAjio.homePage.StaticSections@2a556333]" name="notificationSection" duration-ms="3111" started-at="2020-08-26T16:16:27 IST" depends-on-methods="com.tAjio.homePage.StaticSections.homePage" finished-at="2020-08-26T16:16:30 IST">
+        <test-method status="PASS" signature="pdpStaticElements_Closet()[pri:0, instance:com.tAjio.homePage.PDPBasic@480bdb19]" name="pdpStaticElements_Closet" duration-ms="12873" started-at="2020-08-27T01:34:04 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.homePage" finished-at="2020-08-27T01:34:17 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- notificationSection -->
-        <test-method status="PASS" signature="footerSection()[pri:0, instance:com.tAjio.homePage.StaticSections@2a556333]" name="footerSection" duration-ms="23993" started-at="2020-08-26T16:16:30 IST" depends-on-methods="com.tAjio.homePage.StaticSections.notificationSection" finished-at="2020-08-26T16:16:54 IST">
+        </test-method> <!-- pdpStaticElements_Closet -->
+        <test-method status="PASS" signature="pdpStaticElements_Cart()[pri:0, instance:com.tAjio.homePage.PDPBasic@480bdb19]" name="pdpStaticElements_Cart" duration-ms="4703" started-at="2020-08-27T01:34:17 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpStaticElements_Closet" finished-at="2020-08-27T01:34:22 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- footerSection -->
-        <test-method status="PASS" signature="closure()[pri:0, instance:com.tAjio.homePage.StaticSections@2a556333]" name="closure" is-config="true" duration-ms="980" started-at="2020-08-26T16:16:54 IST" finished-at="2020-08-26T16:16:55 IST">
+        </test-method> <!-- pdpStaticElements_Cart -->
+        <test-method status="PASS" signature="closure()[pri:0, instance:com.tAjio.homePage.PDPBasic@480bdb19]" name="closure" is-config="true" duration-ms="1403" started-at="2020-08-27T01:34:22 IST" finished-at="2020-08-27T01:34:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-      </class> <!-- com.tAjio.homePage.StaticSections -->
+      </class> <!-- com.tAjio.homePage.PDPBasic -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

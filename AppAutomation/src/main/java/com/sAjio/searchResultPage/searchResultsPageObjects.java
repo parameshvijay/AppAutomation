@@ -14,6 +14,9 @@ public class searchResultsPageObjects {
 	@FindBy(xpath = "(//*[@resource-id='com.ril.ajio:id/item_price'])[3]")
 	public WebElement lnkSearchResultsThirdItem;
 
+	@FindBy(xpath = "(//*[@resource-id='com.ril.ajio:id/img_product'])[1]")
+	public WebElement lnkSearchResultsFirstItemProductImage;
+
 	@FindBy(xpath = "(//*[@resource-id='com.ril.ajio:id/img_product'])[6]")
 	public WebElement lnkProductImageFourthItem;
 

@@ -46,4 +46,13 @@ public class productDetailsPageObjects {
 
 	@FindBy(id = "com.ril.ajio:id/pdp_size_info_tv_text")
 	public WebElement txtSizeNumber;
+
+	@FindBy(id = "com.ril.ajio:id/pdp_toolbar_imv_closet")
+	public WebElement icnClosetAtTop;
+
+	@FindBy(id = "com.ril.ajio:id/pdp_toolbar_imv_cart")
+	public WebElement icnCartAtTop;
+
+	@FindBy(xpath = "//*[@resource-id='com.ril.ajio:id/toolbar']//android.widget.ImageButton")
+	public WebElement icnCloseCart;
 }

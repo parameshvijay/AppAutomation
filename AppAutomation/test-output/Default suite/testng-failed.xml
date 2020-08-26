@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tAjio.homePage.StaticSections">
+      <class name="com.tAjio.homePage.PDPBasic">
         <methods>
+          <include name="pdpStaticElements_Cart"/>
           <include name="closure"/>
-          <include name="setup"/>
-          <include name="homePage"/>
-          <include name="notificationSection"/>
-          <include name="footerSection"/>
           <include name="sStaticSectionsInitialSetup"/>
+          <include name="setup"/>
+          <include name="pdpStaticElements_Closet"/>
+          <include name="homePage"/>
         </methods>
-      </class> <!-- com.tAjio.homePage.StaticSections -->
+      </class> <!-- com.tAjio.homePage.PDPBasic -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
