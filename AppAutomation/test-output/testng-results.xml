@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23222" started-at="2020-08-25T16:58:03 IST" finished-at="2020-08-25T16:58:26 IST">
+  <suite name="Default suite" duration-ms="26072" started-at="2020-08-25T23:51:40 IST" finished-at="2020-08-25T23:52:06 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23222" started-at="2020-08-25T16:58:03 IST" finished-at="2020-08-25T16:58:26 IST">
-      <class name="com.tAjio.homePage.Notifications">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.tAjio.homePage.Notifications@480bdb19]" name="setup" is-config="true" duration-ms="18554" started-at="2020-08-25T16:58:03 IST" finished-at="2020-08-25T16:58:21 IST">
+    <test name="Default test" duration-ms="26072" started-at="2020-08-25T23:51:40 IST" finished-at="2020-08-25T23:52:06 IST">
+      <class name="com.tAjio.homePage.StaticSections">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.tAjio.homePage.StaticSections@2a556333]" name="setup" is-config="true" duration-ms="18832" started-at="2020-08-25T23:51:40 IST" finished-at="2020-08-25T23:51:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="sHamburgerMenuInitialSetup()[pri:0, instance:com.tAjio.homePage.Notifications@480bdb19]" name="sHamburgerMenuInitialSetup" is-config="true" duration-ms="61" started-at="2020-08-25T16:58:21 IST" finished-at="2020-08-25T16:58:21 IST">
+        <test-method status="PASS" signature="sStaticSectionsInitialSetup()[pri:0, instance:com.tAjio.homePage.StaticSections@2a556333]" name="sStaticSectionsInitialSetup" is-config="true" duration-ms="32" started-at="2020-08-25T23:51:59 IST" finished-at="2020-08-25T23:51:59 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sHamburgerMenuInitialSetup -->
-        <test-method status="PASS" signature="homePage()[pri:1, instance:com.tAjio.homePage.Notifications@480bdb19]" name="homePage" duration-ms="2805" started-at="2020-08-25T16:58:21 IST" finished-at="2020-08-25T16:58:24 IST">
+        </test-method> <!-- sStaticSectionsInitialSetup -->
+        <test-method status="PASS" signature="homePage()[pri:1, instance:com.tAjio.homePage.StaticSections@2a556333]" name="homePage" duration-ms="3159" started-at="2020-08-25T23:51:59 IST" finished-at="2020-08-25T23:52:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="notificationSection()[pri:0, instance:com.tAjio.homePage.Notifications@480bdb19]" name="notificationSection" duration-ms="1758" started-at="2020-08-25T16:58:24 IST" depends-on-methods="com.tAjio.homePage.Notifications.homePage" finished-at="2020-08-25T16:58:26 IST">
+        <test-method status="PASS" signature="notificationSection()[pri:0, instance:com.tAjio.homePage.StaticSections@2a556333]" name="notificationSection" duration-ms="2464" started-at="2020-08-25T23:52:02 IST" depends-on-methods="com.tAjio.homePage.StaticSections.homePage" finished-at="2020-08-25T23:52:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- notificationSection -->
-        <test-method status="PASS" signature="closure()[pri:0, instance:com.tAjio.homePage.Notifications@480bdb19]" name="closure" is-config="true" duration-ms="1361" started-at="2020-08-25T16:58:26 IST" finished-at="2020-08-25T16:58:27 IST">
+        <test-method status="PASS" signature="footerSection()[pri:0, instance:com.tAjio.homePage.StaticSections@2a556333]" name="footerSection" duration-ms="1534" started-at="2020-08-25T23:52:05 IST" depends-on-methods="com.tAjio.homePage.StaticSections.notificationSection" finished-at="2020-08-25T23:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footerSection -->
+        <test-method status="PASS" signature="closure()[pri:0, instance:com.tAjio.homePage.StaticSections@2a556333]" name="closure" is-config="true" duration-ms="1296" started-at="2020-08-25T23:52:06 IST" finished-at="2020-08-25T23:52:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-      </class> <!-- com.tAjio.homePage.Notifications -->
+      </class> <!-- com.tAjio.homePage.StaticSections -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

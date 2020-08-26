@@ -16,7 +16,7 @@ import com.sAjio.searchResultPage.searchResultsPageAsserts;
 import com.sAjio.searchResultPage.searchResultsPageMethods;
 import com.sAjio.searchResultPage.searchResultsPageObjects;
 
-public class Notifications extends CommonObjects {
+public class StaticSections extends CommonObjects {
 
 	// Object declaration for Methods
 	homePageMethods methodHomeObj;
@@ -34,7 +34,7 @@ public class Notifications extends CommonObjects {
 	productDetailsPageAsserts assertProductDetailsPageObj;
 
 	@BeforeClass
-	public void sHamburgerMenuInitialSetup() {
+	public void sStaticSectionsInitialSetup() {
 		methodHomeObj = new homePageMethods();
 		methodSearchResultsObj = new searchResultsPageMethods();
 		methodCommon = new CommonMethods();
@@ -63,5 +63,11 @@ public class Notifications extends CommonObjects {
 	public void notificationSection() {
 		methodHomeObj.clickAction(homeObj.lnkNotificationIcon);
 		assertHomeObj.validateNotificationScreen();
+		methodHomeObj.clickAction(homeObj.icnNotificationBack);
+	}
+
+	@Test(dependsOnMethods = "notificationSection")
+	public void footerSection() {
+		methodHomeObj.clickAction(homeObj.icnStoresFooter);
 	}
 }

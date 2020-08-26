@@ -45,4 +45,19 @@ public class homePageObjects {
 
 	@FindBy(xpath = "//*[@content-desc='Navigate up']")
 	public WebElement icnNotificationBack;
+
+	@FindBy(xpath = "//androidx.appcompat.app.ActionBar.b[1]/android.widget.RelativeLayout/android.widget.TextView")
+	public WebElement icnHomePageFooter;
+
+	@FindBy(xpath = "//androidx.appcompat.app.ActionBar.b[2]/android.widget.RelativeLayout/android.widget.TextView")
+	public WebElement icnStoresFooter;
+
+	@FindBy(xpath = "//androidx.appcompat.app.ActionBar.b[3]/android.widget.RelativeLayout/android.widget.TextView")
+	public WebElement icnAccountFooter;
+
+	@FindBy(xpath = "//androidx.appcompat.app.ActionBar.b[4]/android.widget.RelativeLayout/android.widget.TextView")
+	public WebElement icnClosetFooter;
+
+	@FindBy(xpath = "//androidx.appcompat.app.ActionBar.b[5]/android.widget.RelativeLayout/android.widget.TextView")
+	public WebElement icnBagFooter;
 }
