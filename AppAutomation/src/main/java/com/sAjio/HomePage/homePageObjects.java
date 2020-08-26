@@ -13,6 +13,9 @@ public class homePageObjects {
 	List<String> sExpectedMenuItems = Arrays.asList("WOMEN", "MEN", "KIDS", "INDIE (The Artisan Store)", "STORES",
 			"NEW ARRIVALS", "SALE", "COLLECTIONS");
 
+	@FindBy(id = "com.ril.ajio:id/ajio_progress_imv")
+	public WebElement icnAjioProgressBar;
+
 	@FindBy(id = "com.ril.ajio:id/category_detailview_imv_one")
 	public WebElement lnkAjioManiaHeader;
 
@@ -38,7 +41,7 @@ public class homePageObjects {
 	public WebElement lnkNotificationIcon;
 
 	@FindBy(id = "com.ril.ajio:id/toolbar_title")
-	public WebElement txtNotificationHeader;
+	public WebElement txtPageHeader;
 
 	@FindBy(id = "com.ril.ajio:id/empty_notification_img")
 	public WebElement imgEmptyNotification;
@@ -60,4 +63,22 @@ public class homePageObjects {
 
 	@FindBy(xpath = "//androidx.appcompat.app.ActionBar.b[5]/android.widget.RelativeLayout/android.widget.TextView")
 	public WebElement icnBagFooter;
+
+	@FindBy(id = "com.google.android.gms:id/credential_picker_layout")
+	public WebElement secAccountSelection;
+
+	@FindBy(id = "com.google.android.gms:id/cancel")
+	public WebElement lnkCancelAccountSelection;
+
+	@FindBy(id = "com.ril.ajio:id/facebook_login_layout")
+	public WebElement btnFacebookLogin;
+
+	@FindBy(xpath = "//*[@resource-id='m-future-page-header-title']")
+	public WebElement txtHeaderFacebookLandingPage;
+
+	@FindBy(xpath = "(//*[@resource-id='page']//android.widget.Button)[1]")
+	public WebElement lnkFacebookBackNavigation;
+
+	@FindBy(id = "com.ril.ajio:id/login_toolbar_tv_skip")
+	public WebElement lnkClosetSkip;
 }

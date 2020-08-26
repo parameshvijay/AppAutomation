@@ -62,12 +62,22 @@ public class StaticSections extends CommonObjects {
 	@Test(dependsOnMethods = "homePage")
 	public void notificationSection() {
 		methodHomeObj.clickAction(homeObj.lnkNotificationIcon);
-		assertHomeObj.validateNotificationScreen();
+		assertHomeObj.validateScreenHeader("Notifications");
 		methodHomeObj.clickAction(homeObj.icnNotificationBack);
 	}
 
 	@Test(dependsOnMethods = "notificationSection")
 	public void footerSection() {
-		methodHomeObj.clickAction(homeObj.icnStoresFooter);
+		methodHomeObj.clickAction(homeObj.icnStoresFooter, homeObj.txtPageHeader);
+		assertHomeObj.validateScreenHeader("Stores");
+		methodHomeObj.clickAction(homeObj.icnAccountFooter, homeObj.txtPageHeader);
+		assertHomeObj.validateScreenHeader("My Account");
+		methodHomeObj.clickAction(homeObj.icnClosetFooter, homeObj.lnkCancelAccountSelection);
+		methodHomeObj.clickAction(homeObj.lnkCancelAccountSelection);
+		methodHomeObj.clickAction(homeObj.btnFacebookLogin, homeObj.txtHeaderFacebookLandingPage);
+		methodHomeObj.clickAction(homeObj.lnkFacebookBackNavigation, homeObj.btnFacebookLogin);
+		methodHomeObj.clickAction(homeObj.lnkClosetSkip, homeObj.txtPageHeader);
+		methodHomeObj.clickAction(homeObj.icnBagFooter, homeObj.txtPageHeader);
+		assertHomeObj.validateScreenHeader("My Bag");
 	}
 }

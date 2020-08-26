@@ -47,10 +47,10 @@ public class homePageAsserts extends CommonObjects {
 		Assert.assertEquals(comparison, homePageObj.sExpectedMenuItems);
 	}
 
-	public void validateNotificationScreen() {
+	public void validateScreenHeader(String s) {
 		wait.until(ExpectedConditions.or(ExpectedConditions.visibilityOf(homePageObj.imgEmptyNotification),
-				ExpectedConditions.visibilityOf(homePageObj.txtNotificationHeader)));
-		String sHeaderText = homePageObj.txtNotificationHeader.getText();
-		Assert.assertEquals(sHeaderText, "Notifications");
+				ExpectedConditions.visibilityOf(homePageObj.txtPageHeader)));
+		String sHeaderText = homePageObj.txtPageHeader.getText();
+		Assert.assertEquals(sHeaderText, s);
 	}
 }

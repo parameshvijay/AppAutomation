@@ -24,4 +24,10 @@ public class homePageMethods extends CommonObjects {
 		wait.until(ExpectedConditions.visibilityOf(e));
 		e.click();
 	}
+
+	public void clickAction(WebElement e, WebElement eTarget) {
+		wait.until(ExpectedConditions.visibilityOf(e));
+		e.click();
+		wait.until(ExpectedConditions.visibilityOf(eTarget));
+	}
 }
