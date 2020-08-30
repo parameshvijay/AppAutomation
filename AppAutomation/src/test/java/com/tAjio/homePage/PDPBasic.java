@@ -65,17 +65,24 @@ public class PDPBasic extends CommonObjects {
 
 	@Test(dependsOnMethods = "homePage")
 	public void pdpStaticElements_Closet() {
-		methodHomeObj.clickAction(productDetailsObj.icnClosetAtTop, homeObj.lnkCancelAccountSelection);
-		methodHomeObj.clickAction(homeObj.lnkCancelAccountSelection);
-		methodHomeObj.clickAction(homeObj.btnFacebookLogin, homeObj.txtHeaderFacebookLandingPage);
-		methodHomeObj.clickAction(homeObj.lnkFacebookBackNavigation, homeObj.btnFacebookLogin);
-		methodHomeObj.clickAction(homeObj.lnkClosetSkip, productDetailsObj.icnSizeChart);
+//		methodHomeObj.clickAction(productDetailsObj.icnClosetAtTop, homeObj.lnkCancelAccountSelection);
+//		methodHomeObj.clickAction(homeObj.lnkCancelAccountSelection);
+//		methodHomeObj.clickAction(homeObj.btnFacebookLogin, homeObj.txtHeaderFacebookLandingPage);
+//		methodHomeObj.clickAction(homeObj.lnkFacebookBackNavigation, homeObj.btnFacebookLogin);
+//		methodHomeObj.clickAction(homeObj.lnkClosetSkip, productDetailsObj.icnSizeChart);
 	}
 
 	@Test(dependsOnMethods = "pdpStaticElements_Closet")
 	public void pdpStaticElements_Cart() {
-		methodHomeObj.clickAction(productDetailsObj.icnCartAtTop, homeObj.txtPageHeader);
-		assertHomeObj.validateScreenHeader("My Bag");
-		methodHomeObj.clickAction(productDetailsObj.icnCloseCart, productDetailsObj.icnSizeChart);
+//		methodHomeObj.clickAction(productDetailsObj.icnCartAtTop, homeObj.txtPageHeader);
+//		assertHomeObj.validateScreenHeader("My Bag");
+//		methodHomeObj.clickAction(productDetailsObj.icnCloseCart, productDetailsObj.icnSizeChart);
+	}
+
+	@Test(dependsOnMethods = "pdpStaticElements_Cart")
+	public void pdpProductImageScroll() throws InterruptedException {
+		double startPercentage = 0.35, endPercentage = 0.05;
+		int scrollCount = 3;
+		methodCommon.scrollRight(productDetailsObj.imgProductDetailsPage, startPercentage, endPercentage, scrollCount);
 	}
 }

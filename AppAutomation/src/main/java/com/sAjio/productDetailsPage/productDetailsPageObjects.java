@@ -55,4 +55,7 @@ public class productDetailsPageObjects {
 
 	@FindBy(xpath = "//*[@resource-id='com.ril.ajio:id/toolbar']//android.widget.ImageButton")
 	public WebElement icnCloseCart;
+
+	@FindBy(id = "com.ril.ajio:id/row_pdp_circle_indicator")
+	public WebElement icnProductImageScroller;
 }

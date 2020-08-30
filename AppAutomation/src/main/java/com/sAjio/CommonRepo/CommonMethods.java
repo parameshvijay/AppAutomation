@@ -39,6 +39,20 @@ public class CommonMethods extends CommonObjects {
 			}
 	}
 
+	@SuppressWarnings("rawtypes")
+	public void scrollRight(WebElement element, double sPercentage, double ePercentage, int count) {
+		wait.until(ExpectedConditions.visibilityOf(element));
+		for (int i = 1; i <= count; i++) {
+			Dimension size = driver.manage().window().getSize();
+			int anchor = (element.getSize().getWidth()) / 2;
+			int startPoint = (int) (size.width * sPercentage);
+			int endPoint = (int) (size.width * ePercentage);
+
+			new TouchAction(driver).press(point(startPoint, anchor)).waitAction(waitOptions(ofMillis(1000)))
+					.moveTo(point(endPoint, anchor)).release().perform();
+		}
+	}
+
 	public void clickAction(WebElement e) {
 		wait.until(ExpectedConditions.visibilityOf(e));
 		e.click();
