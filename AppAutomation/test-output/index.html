@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\ppadman1\AppData\Local\Temp\testng-eclipse-755400232\testng-customsuite.xml</span>
+                    <span>C:\Users\ppadman1\AppData\Local\Temp\testng-eclipse-505645779\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,7 +109,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.tAjio.homePage.PDPBasic" hash-for-method="pdpAddToCart">pdpAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.tAjio.homePage.PDPBasic" hash-for-method="pdpProductImageScroll">pdpProductImageScroll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.tAjio.homePage.PDPBasic" hash-for-method="pdpProductImageZoomView">pdpProductImageZoomView</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -149,9 +159,23 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="pdpAddToCart">
+                  </a> <!-- pdpAddToCart -->
+                  <span class="method-name">pdpAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="pdpProductImageScroll">
                   </a> <!-- pdpProductImageScroll -->
                   <span class="method-name">pdpProductImageScroll</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pdpProductImageZoomView">
+                  </a> <!-- pdpProductImageZoomView -->
+                  <span class="method-name">pdpProductImageZoomView</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -173,7 +197,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ppadman1\AppData\Local\Temp\testng-eclipse-755400232\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ppadman1\AppData\Local\Temp\testng-eclipse-505645779\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -222,28 +246,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'homePage')
 data.setCell(0, 2, 'com.tAjio.homePage.PDPBasic')
-data.setCell(0, 3, 17012);
+data.setCell(0, 3, 16679);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'pdpProductImageScroll')
+data.setCell(1, 1, 'pdpAddToCart')
 data.setCell(1, 2, 'com.tAjio.homePage.PDPBasic')
-data.setCell(1, 3, 9441);
+data.setCell(1, 3, 9853);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'pdpStaticElements_Closet')
+data.setCell(2, 1, 'pdpProductImageScroll')
 data.setCell(2, 2, 'com.tAjio.homePage.PDPBasic')
-data.setCell(2, 3, 3);
+data.setCell(2, 3, 7726);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'pdpStaticElements_Cart')
+data.setCell(3, 1, 'pdpProductImageZoomView')
 data.setCell(3, 2, 'com.tAjio.homePage.PDPBasic')
-data.setCell(3, 3, 2);
+data.setCell(3, 3, 4664);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'pdpStaticElements_Closet')
+data.setCell(4, 2, 'com.tAjio.homePage.PDPBasic')
+data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'pdpStaticElements_Cart')
+data.setCell(5, 2, 'com.tAjio.homePage.PDPBasic')
+data.setCell(5, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -276,27 +308,35 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">sStaticSectionsInitialSetup</span>
-                <span class="method-start">19200 ms</span>
+                <span class="method-start">17730 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">homePage</span>
-                <span class="method-start">19239 ms</span>
+                <span class="method-start">17782 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pdpStaticElements_Closet</span>
-                <span class="method-start">36269 ms</span>
+                <span class="method-start">34475 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pdpStaticElements_Cart</span>
-                <span class="method-start">36276 ms</span>
+                <span class="method-start">34480 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pdpProductImageScroll</span>
-                <span class="method-start">36281 ms</span>
+                <span class="method-start">34483 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">pdpProductImageZoomView</span>
+                <span class="method-start">42211 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">pdpAddToCart</span>
+                <span class="method-start">46878 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">closure</span>
-                <span class="method-start">45751 ms</span>
+                <span class="method-start">56749 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

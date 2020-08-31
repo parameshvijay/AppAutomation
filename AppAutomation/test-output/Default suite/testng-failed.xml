@@ -6,10 +6,12 @@
       <class name="com.tAjio.homePage.PDPBasic">
         <methods>
           <include name="pdpStaticElements_Cart"/>
+          <include name="pdpProductImageZoomView"/>
           <include name="closure"/>
           <include name="pdpProductImageScroll"/>
           <include name="sStaticSectionsInitialSetup"/>
           <include name="setup"/>
+          <include name="pdpAddToCart"/>
           <include name="pdpStaticElements_Closet"/>
           <include name="homePage"/>
         </methods>

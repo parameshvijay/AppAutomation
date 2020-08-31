@@ -85,4 +85,24 @@ public class PDPBasic extends CommonObjects {
 		int scrollCount = 3;
 		methodCommon.scrollRight(productDetailsObj.imgProductDetailsPage, startPercentage, endPercentage, scrollCount);
 	}
+
+	@Test(dependsOnMethods = "pdpProductImageScroll")
+	public void pdpProductImageZoomView() {
+		methodHomeObj.clickAction(productDetailsObj.imgProductDetailsPage,
+				productDetailsObj.icnProductZoomImageScroller);
+		methodHomeObj.clickAction(productDetailsObj.icnProductZoomImageLeftScroll,
+				productDetailsObj.icnProductZoomImageRightScroll);
+		methodHomeObj.clickAction(productDetailsObj.icnProductZoomImageRightScroll,
+				productDetailsObj.icnProductZoomImageLeftScroll);
+		methodHomeObj.clickAction(productDetailsObj.icnProductZoomImageCloseView,
+				productDetailsObj.imgProductDetailsPage);
+	}
+
+	@Test(dependsOnMethods = "pdpProductImageZoomView")
+	public void pdpAddToCart() {
+		double startPercentage = 0.25, endPercentage = 0.05;
+		methodCommon.scrollDown(productDetailsObj.txtSimilarTo, startPercentage, endPercentage);
+		productDetailsObj.lnkSizeNumber34.click();
+		methodHomeObj.clickAction(productDetailsObj.btnAddToBag, productDetailsObj.txtHeaderNotification);
+	}
 }

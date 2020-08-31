@@ -29,6 +29,30 @@ public class productDetailsPageObjects {
 	@FindBy(id = "com.ril.ajio:id/toolbar_title")
 	public WebElement txtSizeGuide;
 
+	@FindBy(xpath = "//*[@text='in']")
+	public WebElement txtSizeGuideMetricsInches;
+
+	@FindBy(xpath = "//*[@text='cm']")
+	public WebElement txtSizeGuideMetricsCentimeters;
+
+	@FindBy(xpath = "//*[@text='inches']")
+	public WebElement txtSizeGuideMetricsInchesSelection;
+
+	@FindBy(xpath = "//*[@text='cm'][1]")
+	public WebElement txtSizeGuideMetricsCentimetersSelection;
+
+	@FindBy(xpath = "//*[@text='Brand Compare']")
+	public WebElement secSizeGuideMetricsBrandCompare;
+
+	@FindBy(xpath = "//*[@text='How to Measure']")
+	public WebElement secSizeGuideMetricsHowToMeasure;
+
+	@FindBy(xpath = "//android.widget.Image")
+	public WebElement imgHowToMeasureImage;
+
+	@FindBy(xpath = "//*[@text='Select a brand']")
+	public WebElement secSizeGuideBrandSelection;
+
 	@FindBy(xpath = "//*[@content-desc='Navigate up']")
 	public WebElement icnNavigateBackSizeChart;
 
@@ -58,4 +82,29 @@ public class productDetailsPageObjects {
 
 	@FindBy(id = "com.ril.ajio:id/row_pdp_circle_indicator")
 	public WebElement icnProductImageScroller;
+
+	@FindBy(id = "com.ril.ajio:id/view_pager_indicator")
+	public WebElement icnProductZoomImageScroller;
+
+	@FindBy(id = "com.ril.ajio:id/iv_zoomimage_lefticon")
+	public WebElement icnProductZoomImageLeftScroll;
+
+	@FindBy(id = "com.ril.ajio:id/iv_zoomimage_righticon")
+	public WebElement icnProductZoomImageRightScroll;
+
+	@FindBy(id = "com.ril.ajio:id/product_gallery_close")
+	public WebElement icnProductZoomImageCloseView;
+
+	@FindBy(id = "com.ril.ajio:id/view_pager_indicator")
+	public WebElement icnProductZoomImageScrollIndicator;
+
+	@FindBy(id = "com.ril.ajio:id/similar_prod_to")
+	public WebElement txtSimilarTo;
+
+	@FindBy(id = "com.ril.ajio:id/add_to_cart_layout_tv")
+	public WebElement btnAddToBag;
+
+	// ADDING PRODUCTS TO CART AND ITS RELEVANT OBJECTS
+	@FindBy(id = "com.ril.ajio:id/notification_text")
+	public WebElement txtHeaderNotification;
 }

@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.sAjio.CommonRepo.CommonMethods;
 import com.sAjio.CommonRepo.CommonObjects;
+import com.sAjio.HomePage.homePageMethods;
 import com.sAjio.searchResultPage.searchResultsPageMethods;
 import com.sAjio.searchResultPage.searchResultsPageObjects;
 
@@ -17,12 +18,14 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 	public static productDetailsPageObjects productDetailsObj;
 	searchResultsPageObjects searchResultsObj;
 	productDetailsPageAsserts assertProductDetailsPageObj;
+	homePageMethods methodHomeObj;
 	CommonMethods comMethods = new CommonMethods();
 
 	public productDetailsPageMethods() {
 		productDetailsObj = PageFactory.initElements(CommonObjects.driver, productDetailsPageObjects.class);
 		searchResultsObj = PageFactory.initElements(CommonObjects.driver, searchResultsPageObjects.class);
 		assertProductDetailsPageObj = new productDetailsPageAsserts();
+		methodHomeObj = new homePageMethods();
 		comMethods = new CommonMethods();
 	}
 
@@ -39,7 +42,7 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 		return pdpDetails;
 	}
 
-	public void checkSizeChart() {
+	public void checkSizeChart() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(searchResultsObj.searchResultsOverallContent));
 
 		String sBrandName = driver.findElement(By.xpath(searchResultsObj.slnkSearchResultsProductBrandName + "[1]"))
@@ -52,8 +55,18 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 
 		String sBrandNameInSizeChart = productDetailsObj.txtBrandName.getText();
 		sBrandNameInSizeChart = sBrandNameInSizeChart.substring(8);
-
 		assertProductDetailsPageObj.validateBrandInSizeChart(sBrandName, sBrandNameInSizeChart);
+		System.out.println(sBrandName);
+
+		methodHomeObj.clickAction(productDetailsObj.txtSizeGuideMetricsCentimeters,
+				productDetailsObj.txtSizeGuideMetricsCentimetersSelection);
+		methodHomeObj.clickAction(productDetailsObj.secSizeGuideMetricsBrandCompare,
+				productDetailsObj.secSizeGuideBrandSelection);
+		methodHomeObj.clickAction(productDetailsObj.secSizeGuideMetricsHowToMeasure,
+				productDetailsObj.imgHowToMeasureImage);
+
+		Thread.sleep(5000);
+
 		productDetailsObj.icnNavigateBackSizeChart.click();
 		wait.until(ExpectedConditions.visibilityOf(productDetailsObj.imgProductDetailsPage));
 	}

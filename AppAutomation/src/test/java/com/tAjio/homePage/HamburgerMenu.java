@@ -81,7 +81,7 @@ public class HamburgerMenu extends CommonObjects {
 	}
 
 	@Test(dependsOnMethods = "productResultsPage")
-	public void productDetailsPage() {
+	public void productDetailsPage() throws InterruptedException {
 		methodProductDetailsPageObj.checkSizeChart();
 		double startPercentage = 0.15, endPercentage = 0.05;
 		methodCommon.scrollDown(productDetailsObj.lnkCheckSizeChart, startPercentage, endPercentage);
