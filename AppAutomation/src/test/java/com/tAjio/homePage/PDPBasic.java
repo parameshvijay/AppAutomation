@@ -103,6 +103,12 @@ public class PDPBasic extends CommonObjects {
 		double startPercentage = 0.25, endPercentage = 0.05;
 		methodCommon.scrollDown(productDetailsObj.txtSimilarTo, startPercentage, endPercentage);
 		productDetailsObj.lnkSizeNumber34.click();
-		methodHomeObj.clickAction(productDetailsObj.btnAddToBag, productDetailsObj.txtHeaderNotification);
+	}
+
+	@Test(dependsOnMethods = "pdpAddToCart")
+	public void pdpSaveToCloset() {
+		methodHomeObj.clickAction(productDetailsObj.btnSaveToCloset, homeObj.lnkCancelAccountSelection);
+		methodHomeObj.clickAction(homeObj.lnkCancelAccountSelection, homeObj.lnkClosetSkip);
+		methodHomeObj.clickAction(homeObj.lnkClosetSkip, productDetailsObj.btnSaveToCloset);
 	}
 }

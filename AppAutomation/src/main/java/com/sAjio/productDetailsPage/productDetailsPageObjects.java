@@ -104,6 +104,9 @@ public class productDetailsPageObjects {
 	@FindBy(id = "com.ril.ajio:id/add_to_cart_layout_tv")
 	public WebElement btnAddToBag;
 
+	@FindBy(id = "com.ril.ajio:id/save_for_later_layout")
+	public WebElement btnSaveToCloset;
+
 	// ADDING PRODUCTS TO CART AND ITS RELEVANT OBJECTS
 	@FindBy(id = "com.ril.ajio:id/notification_text")
 	public WebElement txtHeaderNotification;
