@@ -3,20 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tAjio.homePage.PDPBasic">
+      <class name="com.tAjio.homePage.CartBasic">
         <methods>
-          <include name="pdpStaticElements_Cart"/>
-          <include name="pdpProductImageZoomView"/>
-          <include name="closure"/>
-          <include name="pdpProductImageScroll"/>
-          <include name="sStaticSectionsInitialSetup"/>
-          <include name="setup"/>
-          <include name="pdpAddToCart"/>
-          <include name="pdpStaticElements_Closet"/>
           <include name="homePage"/>
-          <include name="pdpSaveToCloset"/>
+          <include name="closure"/>
+          <include name="setup"/>
+          <include name="pdpSizeSelection"/>
+          <include name="pdpAddToCart"/>
+          <include name="sStaticSectionsInitialSetup"/>
         </methods>
-      </class> <!-- com.tAjio.homePage.PDPBasic -->
+      </class> <!-- com.tAjio.homePage.CartBasic -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

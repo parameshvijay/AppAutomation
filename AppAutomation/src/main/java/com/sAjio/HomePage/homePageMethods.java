@@ -3,6 +3,7 @@ package com.sAjio.HomePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 
 import com.sAjio.CommonRepo.CommonObjects;
 
@@ -29,5 +30,12 @@ public class homePageMethods extends CommonObjects {
 		wait.until(ExpectedConditions.visibilityOf(e));
 		e.click();
 		wait.until(ExpectedConditions.visibilityOf(eTarget));
+	}
+
+	public void clickAction(WebElement e, String s, String s1) {
+		wait.until(ExpectedConditions.visibilityOf(e));
+		e.click();
+		wait.until(ExpectedConditions.textToBePresentInElementValue(e, s));
+		Assert.assertEquals(s1, "Product Added to bag successfully");
 	}
 }
