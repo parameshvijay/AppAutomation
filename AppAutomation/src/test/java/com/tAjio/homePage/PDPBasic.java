@@ -67,8 +67,10 @@ public class PDPBasic extends CommonObjects {
 	public void pdpStaticElements_Closet() {
 		methodHomeObj.clickAction(productDetailsObj.icnClosetAtTop, homeObj.lnkCancelAccountSelection);
 		methodHomeObj.clickAction(homeObj.lnkCancelAccountSelection);
-		methodHomeObj.clickAction(homeObj.btnFacebookLogin, homeObj.txtHeaderFacebookLandingPage);
-		methodHomeObj.clickAction(homeObj.lnkFacebookBackNavigation, homeObj.btnFacebookLogin);
+//		methodHomeObj.clickAction(homeObj.btnFacebookLogin, homeObj.txtHeaderFacebookLandingPage);
+//		methodHomeObj.clickAction(homeObj.secContentPage, homeObj.btnFacebookLogin);
+		// methodHomeObj.clickAction(homeObj.lnkFacebookBackNavigation,
+		// homeObj.btnFacebookLogin);
 		methodHomeObj.clickAction(homeObj.lnkClosetSkip, productDetailsObj.icnSizeChart);
 	}
 
@@ -110,5 +112,13 @@ public class PDPBasic extends CommonObjects {
 		methodHomeObj.clickAction(productDetailsObj.btnSaveToCloset, homeObj.lnkCancelAccountSelection);
 		methodHomeObj.clickAction(homeObj.lnkCancelAccountSelection, homeObj.lnkClosetSkip);
 		methodHomeObj.clickAction(homeObj.lnkClosetSkip, productDetailsObj.btnSaveToCloset);
+	}
+
+	@Test(dependsOnMethods = "pdpSaveToCloset")
+	public void pdpShareOptions() {
+		methodHomeObj.clickAction(productDetailsObj.secShareOptions, productDetailsObj.secSharingDetailedOptions);
+		assertProductDetailsPageObj.validateSharingOptions();
+		methodHomeObj.clickAction(productDetailsObj.icnWhatsApp, productDetailsObj.txtWhatsAppToolbar);
+		methodHomeObj.clickAction(productDetailsObj.icnWhatsAppNavigateBack, productDetailsObj.secShareOptions);
 	}
 }

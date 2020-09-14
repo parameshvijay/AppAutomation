@@ -107,6 +107,21 @@ public class productDetailsPageObjects {
 	@FindBy(id = "com.ril.ajio:id/save_for_later_layout")
 	public WebElement btnSaveToCloset;
 
+	@FindBy(id = "com.ril.ajio:id/footer_pdp_btn_share")
+	public WebElement secShareOptions;
+
+	@FindBy(id = "com.huawei.android.internal.app:id/icon_area")
+	public WebElement secSharingDetailedOptions;
+
+	@FindBy(id = "com.whatsapp:id/toolbar")
+	public WebElement txtWhatsAppToolbar;
+
+	@FindBy(xpath = "//*[@resource-id='com.whatsapp:id/toolbar']/*[@content-desc = 'Navigate up']")
+	public WebElement icnWhatsAppNavigateBack;
+
+	@FindBy(xpath = "//*[@resource-id='android:id/text1' and @text='WhatsApp']")
+	public WebElement icnWhatsApp;
+
 	// ADDING PRODUCTS TO CART AND ITS RELEVANT OBJECTS
 	@FindBy(id = "com.ril.ajio:id/notification_text")
 	public WebElement txtHeaderNotification;

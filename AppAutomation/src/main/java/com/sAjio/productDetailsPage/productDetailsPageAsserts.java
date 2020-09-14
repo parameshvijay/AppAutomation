@@ -22,4 +22,8 @@ public class productDetailsPageAsserts extends CommonObjects {
 	public void validateBrandInSizeChart(String sBrandName, String sBrandNameInSizeChart) {
 		Assert.assertEquals(sBrandName, sBrandNameInSizeChart);
 	}
+
+	public void validateSharingOptions() {
+
+	}
 }

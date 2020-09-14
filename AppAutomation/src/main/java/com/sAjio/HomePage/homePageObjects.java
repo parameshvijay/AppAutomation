@@ -64,6 +64,9 @@ public class homePageObjects {
 	@FindBy(xpath = "//androidx.appcompat.app.ActionBar.b[5]/android.widget.RelativeLayout/android.widget.TextView")
 	public WebElement icnBagFooter;
 
+	@FindBy(xpath = "android:id/content")
+	public WebElement secContentPage;
+
 	@FindBy(id = "com.google.android.gms:id/credential_picker_layout")
 	public WebElement secAccountSelection;
 
@@ -73,7 +76,7 @@ public class homePageObjects {
 	@FindBy(id = "com.ril.ajio:id/facebook_login_layout")
 	public WebElement btnFacebookLogin;
 
-	@FindBy(xpath = "//*[@resource-id='m-future-page-header-title']")
+	@FindBy(xpath = "//*[@resource-id='m-future-page-header-title'] or //*[resource-id='com.facebook.katana:id/(name removed)']")
 	public WebElement txtHeaderFacebookLandingPage;
 
 	@FindBy(xpath = "(//*[@resource-id='page']//android.widget.Button)[1]")
