@@ -6,13 +6,18 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
 import com.sAjio.CommonRepo.CommonObjects;
+import com.sAjio.productDetailsPage.productDetailsPageObjects;
 
 public class homePageMethods extends CommonObjects {
 
 	homePageObjects homePageObj;
+	productDetailsPageObjects productDetailsObj;
 
 	public homePageMethods() {
 		homePageObj = PageFactory.initElements(CommonObjects.driver, homePageObjects.class);
+		productDetailsObj = PageFactory.initElements(CommonObjects.driver, productDetailsPageObjects.class);
+
+		productDetailsObj = new productDetailsPageObjects();
 	}
 
 	public void homePageNavigation() {

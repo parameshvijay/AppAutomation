@@ -13,6 +13,8 @@ import com.sAjio.HomePage.homePageMethods;
 import com.sAjio.searchResultPage.searchResultsPageMethods;
 import com.sAjio.searchResultPage.searchResultsPageObjects;
 
+import io.appium.java_client.MobileElement;
+
 public class productDetailsPageMethods extends searchResultsPageMethods {
 
 	public static productDetailsPageObjects productDetailsObj;
@@ -77,5 +79,22 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 		wait.until(ExpectedConditions.visibilityOf(productDetailsObj.txtSizeNumberHeader));
 		String sSelectedSize = productDetailsObj.txtSizeNumber.getText().substring(1, 3);
 		System.out.println(sSelectedSize);
+	}
+
+	public void clickIndividualShareOptions() {
+		wait.until(ExpectedConditions.visibilityOf(productDetailsObj.secSharingDetailedOptions));
+		double startPercentage = 0.95, endPercentage = 0.05;
+
+		for (int count = 1; count <= 5; count++) {
+
+			List<MobileElement> SharingOptions = driver.findElements(By.xpath(productDetailsObj.txtSharingLogo));
+			int t = SharingOptions.size();
+			for (int i = 1; i <= t; i++) {
+				String sharingOptionsText = driver
+						.findElement(By.xpath(productDetailsObj.txtSharingLogo + "[" + i + "]")).getText();
+				System.out.println(sharingOptionsText);
+			}
+			comMethods.scrollRight(productDetailsObj.secSharingOptionsScroll, startPercentage, endPercentage, count);
+		}
 	}
 }

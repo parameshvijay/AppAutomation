@@ -122,6 +122,14 @@ public class productDetailsPageObjects {
 	@FindBy(xpath = "//*[@resource-id='android:id/text1' and @text='WhatsApp']")
 	public WebElement icnWhatsApp;
 
+	@FindBy(xpath = "//*[@resource-id='com.huawei.android.internal.app:id/icon_area']")
+	public WebElement secSharingOptionsLogo;
+
+	@FindBy(id = "com.huawei.android.internal.app:id/resolver_grid")
+	public WebElement secSharingOptionsScroll;
+
+	public String txtSharingLogo = "(//*[@resource-id='com.huawei.android.internal.app:id/resolver_grid']//*[@resource-id='android:id/text1'])";
+
 	// ADDING PRODUCTS TO CART AND ITS RELEVANT OBJECTS
 	@FindBy(id = "com.ril.ajio:id/notification_text")
 	public WebElement txtHeaderNotification;

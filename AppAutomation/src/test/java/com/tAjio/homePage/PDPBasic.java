@@ -65,39 +65,40 @@ public class PDPBasic extends CommonObjects {
 
 	@Test(dependsOnMethods = "homePage")
 	public void pdpStaticElements_Closet() {
-		methodHomeObj.clickAction(productDetailsObj.icnClosetAtTop, homeObj.lnkCancelAccountSelection);
-		methodHomeObj.clickAction(homeObj.lnkCancelAccountSelection);
+//		methodHomeObj.clickAction(productDetailsObj.icnClosetAtTop, homeObj.lnkCancelAccountSelection);
+//		methodHomeObj.clickAction(homeObj.lnkCancelAccountSelection);
 //		methodHomeObj.clickAction(homeObj.btnFacebookLogin, homeObj.txtHeaderFacebookLandingPage);
 //		methodHomeObj.clickAction(homeObj.secContentPage, homeObj.btnFacebookLogin);
 		// methodHomeObj.clickAction(homeObj.lnkFacebookBackNavigation,
 		// homeObj.btnFacebookLogin);
-		methodHomeObj.clickAction(homeObj.lnkClosetSkip, productDetailsObj.icnSizeChart);
+		// methodHomeObj.clickAction(homeObj.lnkClosetSkip,
+		// productDetailsObj.icnSizeChart);
 	}
 
 	@Test(dependsOnMethods = "pdpStaticElements_Closet")
 	public void pdpStaticElements_Cart() {
-		methodHomeObj.clickAction(productDetailsObj.icnCartAtTop, homeObj.txtPageHeader);
-		assertHomeObj.validateScreenHeader("My Bag");
-		methodHomeObj.clickAction(productDetailsObj.icnCloseCart, productDetailsObj.icnSizeChart);
+//		methodHomeObj.clickAction(productDetailsObj.icnCartAtTop, homeObj.txtPageHeader);
+//		assertHomeObj.validateScreenHeader("My Bag");
+//		methodHomeObj.clickAction(productDetailsObj.icnCloseCart, productDetailsObj.icnSizeChart);
 	}
 
 	@Test(dependsOnMethods = "pdpStaticElements_Cart")
 	public void pdpProductImageScroll() throws InterruptedException {
-		double startPercentage = 0.35, endPercentage = 0.05;
-		int scrollCount = 3;
-		methodCommon.scrollRight(productDetailsObj.imgProductDetailsPage, startPercentage, endPercentage, scrollCount);
+//		double startPercentage = 0.35, endPercentage = 0.05;
+//		int scrollCount = 3;
+//		methodCommon.scrollRight(productDetailsObj.imgProductDetailsPage, startPercentage, endPercentage, scrollCount);
 	}
 
 	@Test(dependsOnMethods = "pdpProductImageScroll")
 	public void pdpProductImageZoomView() {
-		methodHomeObj.clickAction(productDetailsObj.imgProductDetailsPage,
-				productDetailsObj.icnProductZoomImageScroller);
-		methodHomeObj.clickAction(productDetailsObj.icnProductZoomImageLeftScroll,
-				productDetailsObj.icnProductZoomImageRightScroll);
-		methodHomeObj.clickAction(productDetailsObj.icnProductZoomImageRightScroll,
-				productDetailsObj.icnProductZoomImageLeftScroll);
-		methodHomeObj.clickAction(productDetailsObj.icnProductZoomImageCloseView,
-				productDetailsObj.imgProductDetailsPage);
+//		methodHomeObj.clickAction(productDetailsObj.imgProductDetailsPage,
+//				productDetailsObj.icnProductZoomImageScroller);
+//		methodHomeObj.clickAction(productDetailsObj.icnProductZoomImageLeftScroll,
+//				productDetailsObj.icnProductZoomImageRightScroll);
+//		methodHomeObj.clickAction(productDetailsObj.icnProductZoomImageRightScroll,
+//				productDetailsObj.icnProductZoomImageLeftScroll);
+//		methodHomeObj.clickAction(productDetailsObj.icnProductZoomImageCloseView,
+//				productDetailsObj.imgProductDetailsPage);
 	}
 
 	@Test(dependsOnMethods = "pdpProductImageZoomView")
@@ -109,14 +110,15 @@ public class PDPBasic extends CommonObjects {
 
 	@Test(dependsOnMethods = "pdpAddToCart")
 	public void pdpSaveToCloset() {
-		methodHomeObj.clickAction(productDetailsObj.btnSaveToCloset, homeObj.lnkCancelAccountSelection);
-		methodHomeObj.clickAction(homeObj.lnkCancelAccountSelection, homeObj.lnkClosetSkip);
-		methodHomeObj.clickAction(homeObj.lnkClosetSkip, productDetailsObj.btnSaveToCloset);
+//		methodHomeObj.clickAction(productDetailsObj.btnSaveToCloset, homeObj.lnkCancelAccountSelection);
+//		methodHomeObj.clickAction(homeObj.lnkCancelAccountSelection, homeObj.lnkClosetSkip);
+//		methodHomeObj.clickAction(homeObj.lnkClosetSkip, productDetailsObj.btnSaveToCloset);
 	}
 
 	@Test(dependsOnMethods = "pdpSaveToCloset")
 	public void pdpShareOptions() {
 		methodHomeObj.clickAction(productDetailsObj.secShareOptions, productDetailsObj.secSharingDetailedOptions);
+		methodProductDetailsPageObj.clickIndividualShareOptions();
 		assertProductDetailsPageObj.validateSharingOptions();
 		methodHomeObj.clickAction(productDetailsObj.icnWhatsApp, productDetailsObj.txtWhatsAppToolbar);
 		methodHomeObj.clickAction(productDetailsObj.icnWhatsAppNavigateBack, productDetailsObj.secShareOptions);
