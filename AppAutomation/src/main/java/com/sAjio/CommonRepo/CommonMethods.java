@@ -5,6 +5,7 @@ import static io.appium.java_client.touch.offset.PointOption.point;
 import static java.time.Duration.ofMillis;
 
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -39,15 +40,24 @@ public class CommonMethods extends CommonObjects {
 			}
 	}
 
-	@SuppressWarnings("rawtypes")
+	@SuppressWarnings({ "rawtypes" })
 	public void scrollRight(WebElement element, double sPercentage, double ePercentage, int count) {
-		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		for (int i = 1; i <= count; i++) {
 			Dimension size = driver.manage().window().getSize();
 			int anchor = (element.getSize().getWidth()) / 2;
 			int startPoint = (int) (size.width * sPercentage);
 			int endPoint = (int) (size.width * ePercentage);
 
+			System.out.println(anchor);
+			System.out.println(startPoint);
+			System.out.println(endPoint);
+
+			Point location = element.getLocation();
+			System.out.println(location);
+
+//			if (element.equals("productDetailsObj.secSharingDetailedOptions"))
+//				anchor = (element.getSize().getWidth()) / 2;
 			new TouchAction(driver).press(point(startPoint, anchor)).waitAction(waitOptions(ofMillis(1000)))
 					.moveTo(point(endPoint, anchor)).release().perform();
 		}

@@ -110,8 +110,11 @@ public class productDetailsPageObjects {
 	@FindBy(id = "com.ril.ajio:id/footer_pdp_btn_share")
 	public WebElement secShareOptions;
 
-	@FindBy(id = "com.huawei.android.internal.app:id/icon_area")
+	@FindBy(id = "com.huawei.android.internal.app:id/view_pager")
 	public WebElement secSharingDetailedOptions;
+
+	@FindBy(id = "com.huawei.android.internal.app:id/button_cancel")
+	public WebElement btnCancelSharingDetailedOptions;
 
 	@FindBy(id = "com.whatsapp:id/toolbar")
 	public WebElement txtWhatsAppToolbar;

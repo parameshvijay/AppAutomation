@@ -2,66 +2,64 @@
 <testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="466940" started-at="2020-09-19T13:22:16 IST" finished-at="2020-09-19T13:30:03 IST">
+  <suite name="Default suite" duration-ms="229573" started-at="2020-09-22T16:27:00 IST" finished-at="2020-09-22T16:30:49 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="466940" started-at="2020-09-19T13:22:16 IST" finished-at="2020-09-19T13:30:03 IST">
+    <test name="Default test" duration-ms="229573" started-at="2020-09-22T16:27:00 IST" finished-at="2020-09-22T16:30:49 IST">
       <class name="com.tAjio.homePage.PDPBasic">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="setup" is-config="true" duration-ms="18555" started-at="2020-09-19T13:22:16 IST" finished-at="2020-09-19T13:22:35 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="setup" is-config="true" duration-ms="18434" started-at="2020-09-22T16:27:00 IST" finished-at="2020-09-22T16:27:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="sStaticSectionsInitialSetup()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="sStaticSectionsInitialSetup" is-config="true" duration-ms="40" started-at="2020-09-19T13:22:35 IST" finished-at="2020-09-19T13:22:35 IST">
+        <test-method status="PASS" signature="sStaticSectionsInitialSetup()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="sStaticSectionsInitialSetup" is-config="true" duration-ms="67" started-at="2020-09-22T16:27:18 IST" finished-at="2020-09-22T16:27:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sStaticSectionsInitialSetup -->
-        <test-method status="PASS" signature="homePage()[pri:1, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="homePage" duration-ms="19582" started-at="2020-09-19T13:22:35 IST" finished-at="2020-09-19T13:22:55 IST">
+        <test-method status="PASS" signature="homePage()[pri:1, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="homePage" duration-ms="16873" started-at="2020-09-22T16:27:18 IST" finished-at="2020-09-22T16:27:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="pdpStaticElements_Closet()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpStaticElements_Closet" duration-ms="2" started-at="2020-09-19T13:22:55 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.homePage" finished-at="2020-09-19T13:22:55 IST">
+        <test-method status="PASS" signature="pdpStaticElements_Closet()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpStaticElements_Closet" duration-ms="1" started-at="2020-09-22T16:27:35 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.homePage" finished-at="2020-09-22T16:27:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdpStaticElements_Closet -->
-        <test-method status="PASS" signature="pdpStaticElements_Cart()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpStaticElements_Cart" duration-ms="2" started-at="2020-09-19T13:22:55 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpStaticElements_Closet" finished-at="2020-09-19T13:22:55 IST">
+        <test-method status="PASS" signature="pdpStaticElements_Cart()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpStaticElements_Cart" duration-ms="1" started-at="2020-09-22T16:27:35 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpStaticElements_Closet" finished-at="2020-09-22T16:27:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdpStaticElements_Cart -->
-        <test-method status="PASS" signature="pdpProductImageScroll()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpProductImageScroll" duration-ms="1" started-at="2020-09-19T13:22:55 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpStaticElements_Cart" finished-at="2020-09-19T13:22:55 IST">
+        <test-method status="PASS" signature="pdpProductImageScroll()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpProductImageScroll" duration-ms="1" started-at="2020-09-22T16:27:35 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpStaticElements_Cart" finished-at="2020-09-22T16:27:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdpProductImageScroll -->
-        <test-method status="PASS" signature="pdpProductImageZoomView()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpProductImageZoomView" duration-ms="1" started-at="2020-09-19T13:22:55 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpProductImageScroll" finished-at="2020-09-19T13:22:55 IST">
+        <test-method status="PASS" signature="pdpProductImageZoomView()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpProductImageZoomView" duration-ms="1" started-at="2020-09-22T16:27:35 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpProductImageScroll" finished-at="2020-09-22T16:27:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdpProductImageZoomView -->
-        <test-method status="PASS" signature="pdpAddToCart()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpAddToCart" duration-ms="13603" started-at="2020-09-19T13:22:55 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpProductImageZoomView" finished-at="2020-09-19T13:23:08 IST">
+        <test-method status="PASS" signature="pdpAddToCart()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpAddToCart" duration-ms="9824" started-at="2020-09-22T16:27:35 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpProductImageZoomView" finished-at="2020-09-22T16:27:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdpAddToCart -->
-        <test-method status="PASS" signature="pdpSaveToCloset()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpSaveToCloset" duration-ms="1" started-at="2020-09-19T13:23:08 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpAddToCart" finished-at="2020-09-19T13:23:08 IST">
+        <test-method status="PASS" signature="pdpSaveToCloset()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpSaveToCloset" duration-ms="1" started-at="2020-09-22T16:27:45 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpAddToCart" finished-at="2020-09-22T16:27:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdpSaveToCloset -->
-        <test-method status="FAIL" signature="pdpShareOptions()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpShareOptions" duration-ms="415098" started-at="2020-09-19T13:23:08 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpSaveToCloset" finished-at="2020-09-19T13:30:03 IST">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method status="FAIL" signature="pdpShareOptions()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="pdpShareOptions" duration-ms="184311" started-at="2020-09-22T16:27:45 IST" depends-on-methods="com.tAjio.homePage.PDPBasic.pdpSaveToCloset" finished-at="2020-09-22T16:30:49 IST">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[The element 'By.xpath: (//*[@resource-id='com.huawei.android.internal.app:id/resolver_grid']//*[@resource-id='android:id/text1'])[2]' does not exist in DOM anymore
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+              <![CDATA[Method is not implemented
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'CHE7-L21298', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.ril.ajio.home.category...., appPackage: com.ril.ajio, databaseEnabled: false, desired: {appActivity: com.ril.ajio.home.category...., appPackage: com.ril.ajio, deviceName: Honor 9 Lite, noReset: true, platformName: android, platformVersion: 9, udid: 9SF3Y18628012287}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: LLD-AL10, deviceName: 9SF3Y18628012287, deviceScreenDensity: 408, deviceScreenSize: 1080x2160, deviceUDID: 9SF3Y18628012287, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 72, takesScreenshot: true, udid: 9SF3Y18628012287, viewportRect: {height: 1960, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 5ff41753-791c-43f4-92cb-0f70adffb694]]>
+Session ID: 9dd841ba-e3d1-4970-a349-964b27074286]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: (//*[@resource-id='com.huawei.android.internal.app:id/resolver_grid']//*[@resource-id='android:id/text1'])[2]' does not exist in DOM anymore
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+              <![CDATA[org.openqa.selenium.WebDriverException: Method is not implemented
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'CHE7-L21298', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.ril.ajio.home.category...., appPackage: com.ril.ajio, databaseEnabled: false, desired: {appActivity: com.ril.ajio.home.category...., appPackage: com.ril.ajio, deviceName: Honor 9 Lite, noReset: true, platformName: android, platformVersion: 9, udid: 9SF3Y18628012287}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: LLD-AL10, deviceName: 9SF3Y18628012287, deviceScreenDensity: 408, deviceScreenSize: 1080x2160, deviceUDID: 9SF3Y18628012287, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 72, takesScreenshot: true, udid: 9SF3Y18628012287, viewportRect: {height: 1960, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 5ff41753-791c-43f4-92cb-0f70adffb694
+Session ID: 9dd841ba-e3d1-4970-a349-964b27074286
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -75,13 +73,10 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
 at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-at com.sAjio.productDetailsPage.productDetailsPageMethods.clickIndividualShareOptions(productDetailsPageMethods.java:94)
-at com.tAjio.homePage.PDPBasic.pdpShareOptions(PDPBasic.java:120)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+at com.sAjio.CommonRepo.CommonMethods.scrollRight(CommonMethods.java:61)
+at com.sAjio.productDetailsPage.productDetailsPageMethods.clickIndividualShareOptions(productDetailsPageMethods.java:96)
+at com.tAjio.homePage.PDPBasic.pdpShareOptions(PDPBasic.java:121)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -112,11 +107,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdpShareOptions -->
-        <test-method status="PASS" signature="closure()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="closure" is-config="true" duration-ms="1401" started-at="2020-09-19T13:30:03 IST" finished-at="2020-09-19T13:30:05 IST">
+        <test-method status="PASS" signature="closure()[pri:0, instance:com.tAjio.homePage.PDPBasic@7d70d1b1]" name="closure" is-config="true" duration-ms="1475" started-at="2020-09-22T16:30:50 IST" finished-at="2020-09-22T16:30:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->

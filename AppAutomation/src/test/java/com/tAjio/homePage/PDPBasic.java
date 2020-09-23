@@ -118,7 +118,7 @@ public class PDPBasic extends CommonObjects {
 	@Test(dependsOnMethods = "pdpSaveToCloset")
 	public void pdpShareOptions() {
 		methodHomeObj.clickAction(productDetailsObj.secShareOptions, productDetailsObj.secSharingDetailedOptions);
-		methodProductDetailsPageObj.clickIndividualShareOptions();
+		methodProductDetailsPageObj.clickIndividualShareOptions(productDetailsObj.secSharingDetailedOptions);
 		assertProductDetailsPageObj.validateSharingOptions();
 		methodHomeObj.clickAction(productDetailsObj.icnWhatsApp, productDetailsObj.txtWhatsAppToolbar);
 		methodHomeObj.clickAction(productDetailsObj.icnWhatsAppNavigateBack, productDetailsObj.secShareOptions);

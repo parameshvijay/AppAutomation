@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -81,9 +82,9 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 		System.out.println(sSelectedSize);
 	}
 
-	public void clickIndividualShareOptions() {
+	public void clickIndividualShareOptions(WebElement e) {
 		wait.until(ExpectedConditions.visibilityOf(productDetailsObj.secSharingDetailedOptions));
-		double startPercentage = 0.95, endPercentage = 0.05;
+		double startPercentage = 0.35, endPercentage = 0.05;
 
 		for (int count = 1; count <= 5; count++) {
 
@@ -94,7 +95,8 @@ public class productDetailsPageMethods extends searchResultsPageMethods {
 						.findElement(By.xpath(productDetailsObj.txtSharingLogo + "[" + i + "]")).getText();
 				System.out.println(sharingOptionsText);
 			}
-			comMethods.scrollRight(productDetailsObj.secSharingOptionsScroll, startPercentage, endPercentage, count);
+			comMethods.scrollRight(e, startPercentage, endPercentage, count);
 		}
+		productDetailsObj.btnCancelSharingDetailedOptions.click();
 	}
 }
